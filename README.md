@@ -16,6 +16,7 @@ A microservice for calculating vacation payments, taking holidays and weekends i
 ### Requirements
 - Java 17+
 - Maven 3.9+
+- (Optional) Docker 20+
 
 ### Setup
 ```bash
@@ -26,6 +27,10 @@ mvn package
 ### Launch
 ```bash
 java -jar target/vacation-payment-calculator-*.jar
+
+# Or via Docker
+docker build -t vacation-payment-calculator .
+docker run -p 8080:8080 vacation-payment-calculator
 ```
 ## 📌 API Endpoints
 
@@ -73,6 +78,8 @@ Test coverage:
 - Testing: JUnit 5, Mockito
 
 - Build: Maven
+
+- Containerization: Docker
 
 
 ## 📂 Project structure
