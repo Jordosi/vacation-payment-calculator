@@ -38,7 +38,7 @@ public class VacationPaymentControllerAdvice {
             errors.put(error.getField(), error.getDefaultMessage());
         });
 
-        if (ex.getCause() instanceof DateTimeParseException) {
+        if (ex.getCause() instanceof DateTimeParseException || ex.getMessage().contains("java.time.LocalDate")) {
             errors.put("startVacationDate", "Invalid date format. Expected: yyyy-MM-dd");
         }
 
