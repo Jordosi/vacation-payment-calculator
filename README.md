@@ -14,7 +14,7 @@ A microservice for calculating vacation payments, taking holidays and weekends i
 ## 🚀 Fast start
 
 ### Requirements
-- Java 17+
+- Java 21+
 - Maven 3.9+
 - (Optional) Docker 20+
 
